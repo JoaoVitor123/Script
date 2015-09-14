@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CRUD</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="crud.js"></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center">
+      <h1>Lista de Temas </h1>
+
+      <div id="form-well" class="well">
+        <h1 class="text-center">Sugerir tema</h1>
+
+        <form id="form-categoria" action="#">
+
+          <div id="form-group-nome" class="form-group">
+            <label for="nome-input" class="control-label">Tema</label>
+            <input id="nome-input" type="text" class="form-control" name="nome" value="">
+            <span id="help-block-nome" class="help-block"></span></div>
+			
+			
+		<div id="form-group-prioridade" class="form-group">
+            <label for="prioridade-input" class="control-label">prioridade </label>
+            <input id="prioridade-input" type="text" class="form-control" name="prioridade" value="">
+            <span id="help-block-prioridade" class="help-block"></span></div>
+
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+      <button id="botao-nova-categoria" class="btn btn-success">Criar Novo Tema</button>
+      <hr>
+      <h2>Lista de Temas</h2>
+      <table  class="table table-striped table-hover">
+        <thead>
+        <tr>
+		<th>ID</th>
+          <th>Creation</th>
+          <th>Tema</th>
+		  <th>prioridade</th>
+        </tr>
+        </thead>
+        <tbody id="tabela-categoria">
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
